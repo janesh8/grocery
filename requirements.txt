@@ -35,7 +35,7 @@ scikit-image==0.17.2
 scipy==1.5.4
 six==1.12.0
 sqlparse==0.4.1
-tifffile==2020.11.18
+tifffile
 torch==1.7.0+cu101
 torchaudio==0.7.0
 torchvision==0.8.1+cu101
