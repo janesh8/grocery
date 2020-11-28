@@ -36,9 +36,9 @@ scipy==1.5.4
 six==1.12.0
 sqlparse==0.4.1
 tifffile
-pytorch
+torch
 torchaudio==0.7.0
-torchvision==0.8.1+cu101
+torchvision
 tqdm==4.52.0
 typing-extensions==3.7.4.3
 urllib3==1.22
