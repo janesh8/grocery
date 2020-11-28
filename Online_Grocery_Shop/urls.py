@@ -57,6 +57,8 @@ urlpatterns = [
     path('admin_home', Admin_Home, name='admin_home'),
     path('change_password', Change_Password, name="change_password"),
     path('send_feedback/(?P<pid>[0-9]+)', Feedback, name='send_feedback'),
+    url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
+    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 """Online_Grocery_Shop URL Configuration
@@ -79,6 +81,9 @@ from django.urls import path
 from grocery.views import *
 from django.conf.urls.static import static
 from django.conf import settings
+
+from django.views.static import serve
+from django.conf.urls import url
 
 
 urlpatterns = [
